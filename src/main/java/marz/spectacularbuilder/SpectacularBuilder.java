@@ -18,7 +18,18 @@ public class SpectacularBuilder {
                 .age(33)
                 .city("Danzig")
                 .build();
-        System.out.println(spectacularUser.toString());
+        System.out.println(spectacularUser);
+     
+        var moreSpectacularUser = new User.Builder()
+                .firstName("Alexander")
+                .city("Berlin")
+                .build();
+        System.out.println(moreSpectacularUser);
         
+        var ultimateSpectacularUser = new User.Builder()
+                .lastName("Burger")
+                .age(40)
+                .build();
+        System.out.println(ultimateSpectacularUser);
     }
 }
